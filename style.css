@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
+  --color-primary-1: hsl(243, 87%, 12%);
+  --color-primary-2: hsl(238, 22%, 44%);
+  --color-Accent-1: hsl(224, 93%, 58%);
+  --color-Accent-2: hsl(170, 45%, 43%);
+  --color-Neutral-1: hsl(240, 75%, 98%);
+  --color-Neutral-2: hsl(0, 0%, 75%);
+  --color-white: #fff;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 14px;
+}
+
+h1,
+h2,
+a {
+  font-family: var(--font-secondary);
+}
+
+h1,
+h2 {
+  margin: 20px 0;
+}
+
+p {
+  line-height: 1.5;
+  font-size: clamp(14, 3vw, 16px);
+  margin: 20px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::placeholder {
+  padding: 0 5%;
+}
+
+.email__input,
+.btn {
+  display: flex;
+  width: 90%;
+  margin: 15px auto;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+}
+
+.btn {
+  background-color: var(--color-Accent-1);
+  color: var(--color-Neutral-1);
+}
+
+/* ================ header ================ */
+
+header {
+  padding: 0 7%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.nav__logo {
+  width: 100px;
+  height: 40px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list--link {
+  font-weight: 400;
+  color: var(--color-primary-1);
+}
+
+.nav__list--item + .nav__list--item {
+  margin-left: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 70px 0;
+}
+
+/* ================ main ================ */
+
+section {
+  text-align: center;
+}
+
+.first__section {
+  background-image: url("./images/bg-curve-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 50px;
+}
+.second__section--container,
+.first__section--container {
+  padding: 9% 7%;
+}
+
+.first__section--container {
+  background-color: var(--color-Neutral-1);
+}
+
+.first__section--header {
+  margin: 50px 0 20px 0;
+}
+
+.first__section--para {
+  text-align: left;
+}
+
+.first__section--link {
+  color: var(--color-Accent-2);
+  position: relative;
+  display: flex;
+  width: 160px;
+  margin: 50px auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first__section--link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 3px;
+  margin-top: 20px;
+  background-color: var(--color-Accent-2);
+}
+
+.first__section--sub--container {
+  background-image: url("./images/icon-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: 5% 5%;
+  text-align: left;
+  padding: 5%;
+  margin: 5%;
+  background-color: var(--color-white);
+  box-shadow: 0 0 15px 5px rgba(9, 9, 9, 0.3%);
+  border-radius: 10px;
+}
+
+.first__section--sub--container--sub {
+  display: flex;
+  align-items: center;
+}
+
+.testimonail__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.second__section {
+  background-color: var(--color-primary-2);
+  color: var(--color-white);
+}
+
+/* ================ footer ================ */
+
+footer {
+  background-color: var(--color-primary-1);
+  color: var(--color-white);
+  padding: 7%;
+}
+
+footer div {
+  margin: 20px 0;
+}
+
+.footer__socail {
+  text-align: center;
+}
+
+.footer__socail--item {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer__socail--link,
+.footer__list--link {
+  color: var(--color-white);
+}
+
+.footer__socail--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 2%;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+}
