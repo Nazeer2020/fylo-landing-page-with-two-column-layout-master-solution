@@ -20,6 +20,7 @@
   --color-Neutral-1: hsl(240, 75%, 98%);
   --color-Neutral-2: hsl(0, 0%, 75%);
   --color-white: #fff;
+  --color-red: red;
 }
 
 body {
@@ -73,6 +74,10 @@ a {
 .btn {
   background-color: var(--color-Accent-1);
   color: var(--color-Neutral-1);
+}
+
+.form {
+  position: relative;
 }
 
 /* ================ header ================ */
@@ -259,6 +264,23 @@ footer div {
   background-color: var(--color-Accent-3);
 }
 
+/* ================ dom manipulation ================ */
+
+.email_alrt {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 5%;
+}
+
+.first_email-alrt {
+  color: var(--color-red);
+}
+
+.show {
+  display: inline;
+}
+
 /* ================ media query ================ */
 
 @media (min-width: 700px) {
@@ -298,6 +320,14 @@ footer div {
   .first__section--image {
     grid-column: 2/3;
     grid-row: 1/2;
+  }
+
+  .email_alrt {
+    position: absolute;
+    top: 50px;
+  }
+  .first_email-alrt {
+    left: 0;
   }
 }
 

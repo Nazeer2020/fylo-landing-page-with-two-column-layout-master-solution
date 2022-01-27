@@ -15,6 +15,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script src="index.js" defer></script>
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
   <link rel="stylesheet" href="style.css" />
@@ -49,12 +50,15 @@
             them wherever you need, share and collaborate with friends, family
             <br />, and co-workers.
           </p>
-          <div class="hero__text--sub--container">
+          <div class="hero__text--sub--container form">
             <input
               class="hero__text--input email__input"
               type="text"
               placeholder="Enter your email"
             />
+            <span class="email_alrt first_email-alrt"
+              >Please check your mail</span
+            >
             <a class="btn hero__text--btn" href="#">Get Started</a>
           </div>
         </div>
@@ -131,12 +135,13 @@
               would be happy to help you.
             </p>
           </div>
-          <div class="col">
+          <div class="col form">
             <input
               class="second__section--input email__input"
               type="text"
               placeholder="email@example.com"
             />
+            <span class="email_alrt">Please check your mail</span>
             <a class="second__section--btn btn" href="#"
               >Get Started For Free</a
             >
